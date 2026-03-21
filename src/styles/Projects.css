@@ -1,0 +1,68 @@
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+/* Base layout */
+.project-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  align-items: center;
+}
+
+/* Alternate layout */
+.project-item.reverse {
+  direction: rtl;
+}
+
+.project-item.reverse .project-content {
+  direction: ltr;
+}
+
+/* Image */
+.project-image {
+  width: 100%;          /* Take full width of its grid column */
+  max-width: 400px;     /* optional max width */
+  height: 250px;        /* fixed height for all images */
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* ensures image fills container without distortion */
+}
+
+/* Content */
+.project-content h3 {
+  margin-bottom: var(--space-2);
+}
+
+.project-tech {
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-3);
+}
+
+.project-description {
+  margin-bottom: var(--space-4);
+}
+
+/* Buttons */
+.project-actions {
+  display: flex;
+  gap: var(--space-3);
+}
+
+@media (max-width: 768px) {
+  .project-item {
+    grid-template-columns: 1fr;
+  }
+
+  .project-item.reverse {
+    direction: ltr;
+  }
+}
