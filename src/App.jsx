@@ -6,7 +6,11 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
+
+      <main className="main">
+        <Hero />
+      </main>
+
       <Footer />
     </>
   )
