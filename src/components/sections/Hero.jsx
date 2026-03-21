@@ -1,19 +1,34 @@
+import '../../styles/Hero.css'
+
 const Hero = () => {
   return (
-    <section className="section">
-      <div className="container">
-        <div style={{ maxWidth: "600px" }}>
-          <h1>Simple. Modern. Effective.</h1>
+    <section id="hero" className="hero">
+      <div className="container hero-container">
+        <div className="hero-content">
+          <h1>My name is Nova</h1>
+          <h2>
+            I build real-world applications — not just projects.
+          </h2>
 
-          <p style={{ marginTop: "1rem" }}>
-            A clean landing page template built for speed,
-            clarity, and easy customization.
+          <p className="hero-subtext">
+            Full stack developer specializing in C#/.NET and React, focused on building
+            secure systems, clean APIs, and scalable architecture.
           </p>
 
-          <div style={{ marginTop: "2rem", display: "flex", gap: "1rem" }}>
-            <button className="btn btn-primary">Get Started</button>
-            <button className="btn btn-outline">Learn More</button>
+          <p className="hero-tagline">
+            Currently building a mobile POS system and diving deeper into backend architecture.
+          </p>
+
+          <div className="hero-actions">
+            <a href="#projects" className="btn btn-primary">
+              View Projects
+            </a>
+
+            <a href="https://github.com/mikereyes102" className="btn btn-outline">
+              GitHub
+            </a>
           </div>
+
         </div>
       </div>
     </section>
