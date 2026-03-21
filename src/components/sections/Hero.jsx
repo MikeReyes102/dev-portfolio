@@ -5,9 +5,9 @@ const Hero = () => {
     <section id="hero" className="hero">
       <div className="container hero-container">
         <div className="hero-content">
-          <h1>My name is Nova</h1>
+          <h1>.nova development</h1>
           <h2>
-            I build real-world applications — not just projects.
+            Where real-world applications are built — not just projects.
           </h2>
 
           <p className="hero-subtext">
