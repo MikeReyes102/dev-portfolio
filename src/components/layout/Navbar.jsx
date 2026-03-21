@@ -1,44 +1,31 @@
+import { useEffect, useState } from 'react'
+import '../../styles/Navbar.css'
+import '../../styles/main.css'
+
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 8)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
   return (
-    <header>
-      <div className="container">
-        <nav
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            padding: "1.5rem 0"
-          }}
-        >
-          {/* Brand */}
-          <div style={{ fontWeight: 700, fontSize: "1.125rem" }}>
-            BrandName
-          </div>
-
-          {/* Nav Links */}
-          <ul
-            style={{
-              display: "flex",
-              gap: "1.5rem",
-              listStyle: "none"
-            }}
-          >
-            <li>
-              <a href="#services">Services</a>
-            </li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-
-          {/* CTA */}
-          <button className="btn btn-primary">Get Started</button>
-        </nav>
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+      <div className="container nav-container">
+        <div className="logo">
+          <a href="hero">.nova</a>
+        </div>
+        <ul className="nav-links">
+          <li><a href="projects">Projects</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
       </div>
-    </header>
+    </nav>
   )
 }
 
