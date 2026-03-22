@@ -5,61 +5,75 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     min-height: calc(100vh - 70px);
-
+    padding: var(--space-8) var(--space-4); /* adds breathing room on mobile */
 }
 
 .hero-container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    flex-direction: column; /* stack on small screens */
 }
 
 .hero-content {
   max-width: 650px;
-  text-align: left;
   display: flex;
   flex-direction: column;
   gap: var(--space-4); 
+  position: relative;
 }
-.hero-content::before {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: var(--color-primary);
-}
+
 
 /* Typography refinement */
 .hero h1 {
     font-size: 3rem;
     line-height: 1.2;
-    margin-bottom: var(--space-4);
-    background: linear-gradient(to right,
-            var(--color-text),
-            var(--color-muted));
+    font-weight: 700;
+    background: linear-gradient(to right, var(--color-primary-start), var(--color-primary-end));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: var(--space-4);
+    transition: background 0.3s ease;
+}
+
+.hero h2 {
+    font-size: var(--text-2xl);
+    line-height: 1.4;
+    font-weight: 600;
+    margin-bottom: var(--space-4);
+    color: var(--color-text);
 }
 
 .hero-subtext {
   font-size: var(--text-lg);
   line-height: 1.7;
   margin-bottom: var(--space-4);
+  color: var(--color-muted);
 }
 
 .hero-tagline {
   font-size: var(--text-sm);
   line-height: 1.6;
-  color: var(--color-muted);
+  color: var(--color-text); /* more readable than muted */
+  font-style: italic; /* adds a bit of personality */
   margin-bottom: var(--space-6);
 }
 
 /* Buttons */
 .hero-actions {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* left aligned buttons */
     gap: var(--space-4);
     flex-wrap: wrap;
+}
+
+/* Responsiveness */
+
+@media(min-width: 768px) {
+    .hero-container {
+        flex-direction: row; /* side-by-side on larger screens */
+        gap: var(--space-8);
+    }
 }

@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <div className="container navbar-container">
-        <a href="#hero" className="logo">.nova</a>
+        <a href="#hero" className="logo">.nds</a>
 
         <nav>
           <ul className="nav-links">

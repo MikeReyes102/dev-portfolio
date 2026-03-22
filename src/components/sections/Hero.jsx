@@ -5,7 +5,7 @@ const Hero = () => {
     <section id="hero" className="hero">
       <div className="container hero-container">
         <div className="hero-content">
-          <h1>.nova development</h1>
+          <h1>.nova dev solutions</h1>
           <h2>
             Where real-world applications are built — not just projects.
           </h2>
