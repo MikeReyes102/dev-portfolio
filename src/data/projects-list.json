@@ -6,7 +6,7 @@
     "description": "A secure file encryption and decryption tool built using PGP standards, handling key management and file workflows.",
     "github": "#",
     "live": null,
-    "image": "/images/pgp.png"
+    "image": "/images/encryption-image.jpeg"
   },
   {
     "id": "lp-generator",
@@ -15,6 +15,6 @@
     "description": "A reusable React-based system for generating modern landing pages quickly with a consistent design structure.",
     "github": "#",
     "live": null,
-    "image": "/images/landing.png"
+    "image": "/images/lpg-image.jpg"
   }
 ]

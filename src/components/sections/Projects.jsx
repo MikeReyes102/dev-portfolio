@@ -22,7 +22,9 @@ const Projects = () => {
                                 <h3>{project.title}</h3>
 
                                 <p className="project-tech">
-                                    {project.tech.join(" • ")}
+                                    {project.tech.map((t) => (
+                                        <span key={t}>{t}</span>
+                                    ))}
                                 </p>
 
                                 <p className="project-description">
