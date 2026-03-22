@@ -1,30 +1,54 @@
 import { useEffect, useState } from 'react'
 import '../../styles/Navbar.css'
 
+const sections = ["projects", "about", "contact"]
+
 const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false)
+  const [active, setActive] = useState("")
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 8)
+      const scrollPosition = window.scrollY + 100 
+
+      let current = ""
+
+      sections.forEach((section) => {
+        const el = document.getElementById(section)
+        if (!el) return
+
+        if (scrollPosition >= el.offsetTop) {
+          current = section
+        }
+      })
+
+      setActive(current)
     }
 
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <div className="container nav-container">
-        <div className="logo">
-          <a href="hero">.nova</a>
-        </div>
-        <ul className="nav-links">
-          <li><a href="projects">Projects</a></li>
-          <li><a href="about">About</a></li>
-          <li><a href="contact">Contact</a></li>
-        </ul>
+    <header className="navbar">
+      <div className="container navbar-container">
+        <a href="#hero" className="logo">.nova</a>
+
+        <nav>
+          <ul className="nav-links">
+            {sections.map((section) => (
+              <li key={section}>
+                <a
+                  href={`#${section}`}
+                  className={active === section ? "active" : ""}
+                >
+                  {section.charAt(0).toUpperCase() + section.slice(1)}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </div>
-    </nav>
+    </header>
   )
 }
 

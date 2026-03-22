@@ -1,8 +1,13 @@
 /* Navbar Styles */
 
+section {
+  scroll-margin-top: 3rem; /* adjust based on navbar height */
+}
+
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
@@ -15,7 +20,7 @@
 }
 
 /* Layout */
-.nav-container {
+.navbar-container {
   display: flex;
   height: 3rem;
   align-items: center;
@@ -32,8 +37,11 @@
 /* Nav links */
 .nav-links {
   display: flex;
-  gap: var(--space-6);
+  gap: var(--space-5);
   list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
 }
 
 .nav-links a {
@@ -41,25 +49,37 @@
   font-size: var(--text-sm);
   color: var(--color-muted);
   transition: color 0.2s ease;
+  padding-bottom: 4px; /* gives underline space */
 }
 
 .nav-links a:hover {
   color: var(--color-text);
 }
 
-
-/* Underline animation (controlled flair) */
-.nav-links a::after{
+/* Underline */
+.nav-links a::after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: -4px;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
   width: 0%;
   height: 2px;
-  background: var(--color-text);
+  background: var(--color-primary);
   transition: width 0.25s ease;
 }
 
-.nav-links a:hover::after {
+/* Hover effect */
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* Active state */
+.nav-links a.active {
+  color: var(--color-text);
+}
+
+.nav-links a.active::after {
   width: 100%;
 }
