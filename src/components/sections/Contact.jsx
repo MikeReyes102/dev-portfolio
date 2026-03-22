@@ -2,32 +2,18 @@ import '../../styles/Contact.css';
 
 const Contact = () => {
   return (
-    <section id="contact" className="section">
-      <div className="container contact-container">
-        <h2>Contact</h2>
+<section id="contact" className="contact section">
+  <div className="container contact-container">
+    <h2>Contact Me</h2>
 
-        <p className="contact-subtext">
-          Have a project in mind or just want to connect? Feel free to reach out.
-        </p>
-
-        <div className="contact-actions">
-          <a
-            href="mailto:youremail@example.com"
-            className="btn btn-primary"
-          >
-            Email Me
-          </a>
-
-          <a
-            href="https://github.com/yourusername"
-            target="_blank"
-            className="btn btn-outline"
-          >
-            GitHub
-          </a>
-        </div>
-      </div>
-    </section>
+    <form className="contact-form">
+      <input type="text" placeholder="Name" />
+      <input type="email" placeholder="Email" />
+      <textarea placeholder="Message" rows="5" />
+      <button type="submit" className="btn btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
   )
 }
 
