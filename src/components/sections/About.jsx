@@ -1,34 +1,29 @@
 import '../../styles/About.css';
 
 const About = () => {
-    return (
-
-        <section id="about" className="section">
-            <div className="container about-container">
-                <h2>About Me</h2>
-
-                <div className="about-content">
-                    <p>
-                        I’m Michael, a full stack developer with a focus on C#/.NET and React.
-                        I enjoy building secure, scalable systems and clean user interfaces.
-                    </p>
-
-                    <p>
-                        I approach projects with attention to detail and a focus on maintainable
-                        code. I’m always learning, experimenting with new technologies, and
-                        pushing the limits of what I can build.
-                    </p>
-
-                    <p>
-                        When I’m not coding, you might find me designing new workflows, tinkering
-                        with personal projects, or hitting the gym to clear my head.
-                    </p>
-
-                    <a href="#contact" className="btn btn-primary">Get in Touch</a>
-                </div>
-            </div>
-        </section>
-    )
+  return (
+    <section id="about" className="about section">
+      <div className="container about-container">
+        <div className="about-card">
+          <div className="about-content">
+            <h2>About Me</h2>
+            <p>
+                My name is Michael Reyes-Casanova. I'm a full-stack developer based in Virginia Beach, VA and a graduate of ECPI University. I have a passion for building applications that solve real-world problems and create meaningful user experiences.
+            </p>
+            <p>
+                I have experience working with a variety of technologies, including JavaScript, React, Node.js, and MongoDB. I'm always eager to learn new tools and frameworks to stay up-to-date with the latest trends in web development.
+            </p>
+            <p>
+              When I'm not coding, I enjoy hanging out with my family, listening to records, and watching soccer. 
+            </p>
+          </div>
+          <div className="about-image">
+            <img src="/images/about-me.jpg" alt="Michael Reyes-Casanova" />
+          </div>
+        </div>
+      </div>
+    </section>
+  )
 }
 
-export default About;
+export default About
