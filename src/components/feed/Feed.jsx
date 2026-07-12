@@ -1,54 +1,22 @@
-import FeedCard from "./FeedCard";
+import About from "../../sections/about/About";
+import FeaturedProject from "../../sections/featured-project/FeaturedProject";
+import CurrentFocus from "../../sections/current-focus/CurrentFocus";
+import ExperiencePreview from "../../sections/experience/ExperiencePreview";
+
 import "../../styles/feed.css"
 
 export default function Feed() {
-
   return (
-
     <div className="feed">
 
+      <About />
 
-      <FeedCard
-        title="About Me"
-        subtitle="A little bit about who I am"
-      >
-        <p>
-          Placeholder content.
-        </p>
-      </FeedCard>
+      <FeaturedProject />
 
+      <CurrentFocus />
 
-      <FeedCard
-        title="Professional Experience"
-        subtitle="My career journey"
-      >
-        <p>
-          Placeholder content.
-        </p>
-      </FeedCard>
-
-
-      <FeedCard
-        title="Education"
-        subtitle="Academic background"
-      >
-        <p>
-          Placeholder content.
-        </p>
-      </FeedCard>
-
-
-      <FeedCard
-        title="Projects"
-        subtitle="Things I've built"
-      >
-        <p>
-          Placeholder content.
-        </p>
-      </FeedCard>
-
+      <ExperiencePreview />
 
     </div>
-
   );
 }
