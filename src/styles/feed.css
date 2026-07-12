@@ -42,3 +42,42 @@
   gap: var(--space-3);
 
 }
+
+.feed-card-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: var(--space-4);
+
+  margin-bottom: var(--space-4);
+
+}
+
+
+.feed-card-header h2 {
+
+  margin-bottom: var(--space-2);
+
+}
+
+
+.feed-card-subtitle {
+
+  font-size: var(--text-sm);
+
+  color: var(--color-muted);
+
+}
+
+
+.feed-card-actions {
+
+  display: flex;
+
+  gap: var(--space-2);
+
+}
