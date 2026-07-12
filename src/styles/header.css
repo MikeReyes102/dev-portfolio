@@ -3,9 +3,12 @@
 ====================================================== */
 
 .app-header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 100;
+  left: 0;
+  width: 100%;
+
+  z-index: 1000;
 
   background: var(--color-bg);
   border-bottom: 1px solid var(--color-border);
@@ -15,7 +18,7 @@
 
 .app-header-inner {
   max-width: var(--container-width);
-  height: 72px;
+  height: var(--header-height);
 
   margin: 0 auto;
   padding: 0 var(--container-padding);
@@ -58,10 +61,10 @@
   position: relative;
 
   color: var(--color-muted);
-
   font-weight: 500;
 
-  transition: color .2s ease;
+  transition:
+    color var(--transition-base);
 }
 
 .nav-link:hover {
@@ -73,7 +76,6 @@
 }
 
 .nav-link.active::after {
-
   content: "";
 
   position: absolute;
@@ -87,9 +89,8 @@
   border-radius: 999px;
 
   background: linear-gradient(
-      90deg,
-      var(--color-primary-start),
-      var(--color-primary-end)
+    90deg,
+    var(--color-primary-start),
+    var(--color-primary-end)
   );
-
 }
