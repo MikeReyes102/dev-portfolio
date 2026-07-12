@@ -4,31 +4,41 @@ export default function ProfileSidebar() {
   return (
     <div className="profile-card">
 
-      <div className="profile-image">
-        <div className="image-placeholder">
-          Photo
-        </div>
+      <div className="profile-cover">
+        Cover
       </div>
 
-      <div className="profile-info">
+
+      <div className="profile-avatar">
+        Image
+      </div>
+
+
+      <div className="profile-content">
 
         <h2>
-          Michael Reyes-Casanova
+          Name
         </h2>
 
         <p>
-          Software Developer
+          Title
         </p>
 
       </div>
 
-      <div className="profile-meta">
+
+      <div className="profile-details">
 
         <p>
-          React • C# • Full Stack Development
+          Location
+        </p>
+
+        <p>
+          Skills
         </p>
 
       </div>
+
 
     </div>
   );
