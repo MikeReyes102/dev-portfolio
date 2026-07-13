@@ -1,0 +1,99 @@
+/* ======================================================
+   CONTACT
+====================================================== */
+
+
+.contact-header {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: var(--space-3);
+
+}
+
+
+.contact-header p {
+
+  max-width: 700px;
+
+  font-size: var(--text-lg);
+
+}
+
+
+/* ======================================================
+   CONTACT CARD
+====================================================== */
+
+.contact-card {
+
+  max-width: 700px;
+
+  background: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+
+  border-radius: var(--radius-lg);
+
+  padding: var(--space-6);
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: var(--space-5);
+
+  box-shadow: var(--shadow-sm);
+
+}
+
+
+.contact-item {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: var(--space-1);
+
+}
+
+
+.contact-item h3 {
+
+  font-size: var(--text-lg);
+
+}
+
+
+.contact-item a {
+
+  color: var(--color-primary-start);
+
+  transition: color var(--transition-fast);
+
+}
+
+
+.contact-item a:hover {
+
+  color: var(--color-primary-hover);
+
+}
+
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width: 768px) {
+
+  .contact-card {
+
+    padding: var(--space-5);
+
+  }
+
+}
