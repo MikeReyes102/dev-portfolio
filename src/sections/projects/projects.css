@@ -1,0 +1,82 @@
+/* ======================================================
+   PROJECTS PAGE
+====================================================== */
+
+
+/* ======================================================
+   HEADER
+====================================================== */
+
+.projects-header {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: var(--space-3);
+
+}
+
+
+.projects-header h1 {
+
+  font-size: var(--text-4xl);
+
+}
+
+
+.projects-header p {
+
+  max-width: 700px;
+
+  font-size: var(--text-lg);
+
+}
+
+
+/* ======================================================
+   PROJECT GRID
+====================================================== */
+
+.projects-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+
+  gap: var(--space-6);
+
+  padding-bottom: var(--space-8);
+
+}
+
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width: 768px) {
+
+  .projects-header h1 {
+
+    font-size: var(--text-3xl);
+
+  }
+
+
+  .projects-header p {
+
+    font-size: var(--text-base);
+
+  }
+
+
+  .projects-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: var(--space-5);
+
+  }
+
+}
