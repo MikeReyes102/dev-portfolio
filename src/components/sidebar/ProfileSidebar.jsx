@@ -62,11 +62,11 @@ export default function ProfileSidebar() {
 
       <div className="profile-links">
 
-        <a href="#">
+        <a href="https://github.com/MikeReyes102" target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
 
-        <a href="#">
+        <a href="https://www.linkedin.com/in/michaelreyescasanova/" target="_blank" rel="noopener noreferrer">
           LinkedIn
         </a>
 

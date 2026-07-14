@@ -40,7 +40,7 @@ function ContactLinks() {
         </h3>
 
         <a
-          href="#"
+          href="https://github.com/MikeReyes102"
           target="_blank"
           rel="noreferrer"
         >

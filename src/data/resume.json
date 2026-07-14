@@ -1,8 +1,8 @@
 {
-"header": {
-  "title": "Junior Support Engineer II",
-  "summary": "Application Support Engineer specializing in enterprise intelligent process automation platforms and complex production troubleshooting. Experienced supporting customer-hosted and cloud-hosted environments while diagnosing issues across application, database, integration, and infrastructure layers. Skilled in root cause analysis, SQL-based investigation, API integrations, and full-stack development with a focus on building reliable solutions and improving technical processes."
-},
+  "header": {
+    "title": "Junior Support Engineer II",
+    "summary": "Application Support Engineer focused on bridging the gap between software development, infrastructure, and customer success. Experienced supporting enterprise Intelligent Process Automation platforms across customer-hosted and cloud-hosted environments while troubleshooting application, database, integration, and infrastructure issues. Skilled in root cause analysis, SQL-based investigation, API integrations, cloud technologies, and building reliable solutions that improve technical processes and user experiences."
+  },
 
   "experience": [
     {
@@ -10,11 +10,15 @@
       "role": "Junior Support Engineer II",
       "location": "Virginia Beach, VA",
       "date": "March 2025 - Present",
-      "summary": "Support an enterprise Intelligent Process Automation platform by diagnosing and resolving complex application, database, integration, and infrastructure issues.",
+      "summary": "Support an enterprise Intelligent Process Automation platform by diagnosing and resolving complex application, database, integration, and infrastructure issues across customer-hosted and cloud-hosted environments.",
       "highlights": [
-        "Troubleshoot production issues across frontend, backend, and database layers.",
-        "Perform root cause analysis using logs, stack traces, and SQL-based investigation.",
-        "Support customer-hosted and cloud-hosted deployments across IIS, Docker, Azure, AWS, and Linux environments."
+        "Perform root cause analysis across frontend, backend, and database layers using logs, stack traces, and SQL-based investigation.",
+        "Support enterprise deployments across IIS, Docker, Azure, AWS, and Linux environments including upgrades, migrations, and ongoing platform maintenance.",
+        "Troubleshoot integrations involving REST APIs, OAuth, SMTP, database connections, Python scripting, and third-party enterprise systems.",
+        "Collaborate directly with customers, software engineers, project managers, and IT teams to investigate issues and deliver long-term solutions.",
+        "Perform SQL analysis using Microsoft SQL Server and PostgreSQL to validate data integrity, investigate production issues, and implement corrective actions.",
+        "Validate platform enhancements and internal tooling through API, load, and stress testing using Postman and Apache JMeter.",
+        "Contribute to an AI-assisted log remediation initiative by testing workflows designed to connect application errors with AI-generated troubleshooting guidance."
       ]
     },
     {
@@ -22,11 +26,13 @@
       "role": "VIP Service Desk Analyst",
       "location": "Norfolk, VA",
       "date": "June 2024 - March 2025",
-      "summary": "Provided advanced technical support within the Navy Marine Corps Intranet environment while serving as an escalation resource for complex technical issues.",
+      "summary": "Provided advanced technical support within the Navy Marine Corps Intranet environment while serving as an escalation resource for complex technical issues in a secure enterprise environment.",
       "highlights": [
-        "Supported enterprise users in a secure government environment.",
-        "Provided escalation support for complex hardware and software issues.",
-        "Delivered white-glove support for VIP customers."
+        "Supported enterprise users across a global environment serving more than 400,000 users.",
+        "Diagnosed and resolved hardware, software, account, and network connectivity issues through detailed troubleshooting.",
+        "Provided white-glove support for VIP customers and high-priority stakeholders.",
+        "Collaborated with escalation teams to resolve complex technical issues while maintaining detailed documentation.",
+        "Improved first-call resolution through structured troubleshooting and customer-focused support."
       ]
     }
   ],
@@ -51,7 +57,7 @@
     {
       "category": "Databases",
       "items": [
-        "SQL Server",
+        "Microsoft SQL Server",
         "PostgreSQL"
       ]
     },
@@ -61,7 +67,8 @@
         "Azure",
         "AWS",
         "Docker",
-        "IIS"
+        "IIS",
+        "Linux"
       ]
     },
     {
@@ -69,7 +76,8 @@
       "items": [
         "Postman",
         "Apache JMeter",
-        "Git"
+        "Git",
+        "Regex"
       ]
     }
   ],
