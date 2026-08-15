@@ -15,6 +15,6 @@
     "description": "A full-stack project generation system that creates new projects from reusable templates, combining a React interface with a Node.js API and C# project generation logic.",
     "github": "#",
     "live": null,
-    "image": "images/project-generator-image.jpg"
+    "image": "images/lpg-image.jpg"
   }
 ]
