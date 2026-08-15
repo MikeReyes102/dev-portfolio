@@ -9,12 +9,12 @@
     "image": "images/encryption-image.jpeg"
   },
   {
-    "id": "lp-generator",
-    "title": "Landing Page Generator",
-    "tech": ["React", "JavaScript", "CSS"],
-    "description": "A reusable React-based system for generating modern landing pages quickly with a consistent design structure.",
+    "id": "project-generator",
+    "title": "Project Generator",
+    "tech": ["React", "JavaScript", "Node.js"],
+    "description": "A full-stack project generation system that creates new projects from reusable templates, combining a React interface with a Node.js API and C# project generation logic.",
     "github": "#",
     "live": null,
-    "image": "images/lpg-image.jpg"
+    "image": "images/project-generator-image.jpg"
   }
 ]
